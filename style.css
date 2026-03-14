@@ -270,6 +270,7 @@ a {
   font-size: 25px;
   font-weight: normal;
   transition: all 0.2s ease;
+  z-index: 9999;
 }
 
 .sidebar {
