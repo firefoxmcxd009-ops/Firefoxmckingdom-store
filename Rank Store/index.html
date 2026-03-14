@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Website Icon -->
+    <link rel="icon" type="image/png" href="/Icon.svg/Website Icon.png">
+    <link rel="apple-touch-icon" href="/Icon.svg/Website Icon.png">
+
+    <!-- Telegram / Facebook / Discord Preview -->
+    <meta name="them-color" content="#fff">
+    <meta name="google-site-verification" content="G-1tDenzgFPenEI-Q1QUyJppX0c8VWgXg5txoxpGGIk" />
+    <meta property="og:title" content="Ranks Store" />
+    <meta property="og:description" content="Buy Ranks for firefoxmckingdom server." />
+    <meta property="og:image" content="/bg-cover.pngg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="/bg-cover.png" />
+
+  <title>Ranks Store</title>
+  <link rel="stylesheet" href="/Rank Store/RanksStore.css">
+
+  <link href="https://fonts.cdnfonts.com/css/a4-speed" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/esportiva" rel="stylesheet">
+</head>
+<body>
+  <!-- =============== -->
+  <!-- Background Blur -->
+  <!-- =============== -->
+   
+   <div class="blur-item">
+    <div class="blur"></div>
+    <div class="blur"></div>
+   </div>
+   <div class="blur-background"></div>
+   
+  <div class="form" aria-required="true">
+  <div class="box">
+    <h1>Ranks Store</h1>
+    <input class="name" type="text" id="username" placeholder="Minecraft Username" required><br><br>
+
+  <div class="selection">
+    <select name="rank" id="rank" onchange="changeRank()" required>
+     <option value="VIP">VIP</option>
+     <option value="MVP">MVP</option>
+     <option value="MVP+">MVP+</option>
+     <option value="EPIC">EPIC</option>
+     <option value="KINGDOM">KINGDOM</option>
+    </select>
+
+    <label for="fileUpload" class="upload-btn">
+      <p class="chooseFile">អាប់ឡូតវិកាយប័ត្រ</p>
+    </label>
+    <input type="file" name="receipt" accept="image/*"​ id="fileUpload" hidden required><br><br>
+    <p id="fileName">មិនទាន់អាប់ឡូត</p>
+  </div>
+
+  <!-- QR CODE ABA PAYMENT -->
+    <div class="qr-container">
+      <div class="skeleton" id="qrSkeleton"></div>
+      <img src="/static/qr_vip.png" id="qr" width="55%" onload="hideSkeleton()" onerror="showFallback()">
+    </div>
+    <p id="date"></p>
+
+    <div class="submit">
+      <button onclick="sendOrder()">Submit</button>
+    </div>
+  </div>
+</div>
+  <h2>
+    if you wait for 24/7h did't have Rank, contact me on telegram:
+    <strong><a href="https://t.me/firefoxmc_xd">@firefoxmc-xd</a></strong>
+  </h2>
+<script src="/Rank Store/script.js"></script>
+</body>
+</html>

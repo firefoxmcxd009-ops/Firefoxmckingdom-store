@@ -1,0 +1,300 @@
+@import url('https://fonts.cdnfonts.com/css/a4-speed');
+@import url('https://fonts.cdnfonts.com/css/esportiva');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    font-weight: bolder;
+    background: #000000;
+}
+.blur-background {
+    position: fixed;
+    background: #14001bcf;
+    backdrop-filter: blur(250px);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.blur-item {
+    inset: 0;
+    position: fixed;
+    display: block;
+    top: 0;
+}
+.blur {
+    position: absolute;
+    background-color: #007bff;
+    width: 30%;
+    height: 30%;
+    z-index: -1;
+}
+.blur:nth-of-type(even) {
+    bottom: 10%;
+    right: 0;
+    background: #ff00b3;
+}
+.form {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    top: 100px;
+    padding: 30px;
+    margin: 0 auto;
+    height: 50%;
+    width: 40%;
+    background: #24003d82;
+    box-shadow: 0 0 10px #14001b;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    user-select: none;
+}
+.form .box {
+    position: relative;
+    z-index: 100;
+}
+.form::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(#006aff, #aa00ff);
+    box-shadow: 0 0 10px #00ccff;
+    animation: rotate 4s linear infinite;
+    top: 0;
+    left: 30%;
+    scale: 1.45;
+    z-index: 2;
+}
+.form::after {
+    content: '';
+    position: absolute;
+    background: #080020;
+    border-radius: 10px;
+    inset: 2.5px;
+    z-index: 2;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+}
+}
+h1 {
+    position: relative;
+    top: -20px;
+    color: transparent;
+    background-image: linear-gradient(90deg, #0080ff, #ff00d4,  #9000ff);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size:5vh;
+}
+select, option, label {
+    cursor: pointer;
+}
+.name {
+    border: 1.5px solid #a3a3a341;
+    height: 30px;
+    width: 100%;
+    clip-path: polygon(
+        5px 0,
+        100% 0,
+        100% calc(100% - 5px),
+        calc(100% - 5px) 100%,
+        0 100%,
+        0 5px
+    );
+    font-weight: bolder;
+    text-align: center;
+    color: #ff00d4;
+}
+#rank {
+    position: absolute;
+    border: none;
+    height: 30px;
+    clip-path: polygon(
+        5px 0,
+        100% 0,
+        100% calc(100% - 5px),
+        calc(100% - 5px) 100%,
+        0 100%,
+        0 5px
+    );
+    width: 35%;
+    font-family: 'esportiva';
+    text-align: center;
+    color: #ff00d4;
+    font-size: 15.5px;
+}
+.selection {
+    display: flex;
+}
+
+.upload-btn {
+    position: relative;
+    color: #ff00d4;
+    margin-left: 57.5%;
+    font-size: 12.5px;
+    width: 19.5vh;
+    height: 5vh;
+    background-color: #fff;
+    clip-path: polygon(
+        5px 0,
+        100% 0,
+        100% calc(100% - 5px),
+        calc(100% - 5px) 100%,
+        0 100%,
+        0 5px
+    );
+}
+#fileName {
+    position: absolute;
+    left: 90%;
+    font-size: 13px;
+    font-family: "kh ang nitean";
+    font-weight: normal;
+}
+.chooseFile {
+    color: #ff00d4;
+    margin-top: 4px;
+    font-family: "kh ang nitean";
+    font-size: 14px;
+}
+#price {
+    position: relative;
+    color: white;
+}
+#qr {
+    position: relative;
+    margin-top: 10px;
+}
+p {
+    position: relative;
+    color: white;
+}
+.submit {
+    position: relative;
+    background-color: #fff;
+    clip-path: polygon(        5px 0,        100% 0,        100% calc(100% - 5px),        calc(100% - 5px) 100%,        0 100%,        0 5px    );
+    width: 60%;
+    transition: .5s ease;
+    margin-top: 10px;
+}
+.submit:hover {
+    scale: 1.04;
+}
+button {
+    width: 60%;
+    height: 5vh;
+    border: none;
+    font-family: 'a4 speed';
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+    color: transparent;
+    background-image: linear-gradient(to right, #0080ff, #ff00d4,  #9000ff, #0080ff);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: text 1s linear infinite;
+    -webkit-animation: text 4s linear infinite;
+}
+h2 {
+   color: #dbdbdb;
+   font-size: 10px;
+   position: relative;
+   justify-content: start;
+   text-align: center;
+}
+h2 {
+    margin-top: 10%;
+}
+strong a {
+    color: rgb(255, 0, 149);
+    text-decoration: underline;
+}
+@keyframes text {
+    to {
+        background-position: 200%;
+    }
+}
+@media (max-width: 768px) {
+    .form {
+        width: 85%;
+        height: 50%;
+    }
+    .form::before {
+        width: 120px;
+    }
+    .name {
+        width: 100%;
+    }
+    h1 {
+        font-size: 4vh;
+    }
+    h2 {
+        margin-top: 50%;
+    }
+    #fileName {
+    position: absolute;
+    margin-top: 30px;
+    left: 65%;
+    font-size: 11px;
+    font-family: "kh ang nitean";
+    font-weight: normal;
+}
+    .chooseFile {
+        font-size: 10px;
+        margin-top: 7px;
+    }
+}
+
+/* =============== */
+/* SKELETON LOADER*/
+/* =============== */
+.qr-container{
+  position: relative;
+  width: 55%;
+  margin: auto;
+}
+
+#qr{
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Skeleton */
+.skeleton{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    #1e293b 25%,
+    #334155 50%,
+    #1e293b 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.2s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes loading{
+  0%{ background-position: 200% 0; }
+  100%{ background-position: -200% 0; }
+}
+
+.hidden{
+  display: none;
+}
