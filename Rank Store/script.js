@@ -97,10 +97,10 @@ let time = now.toLocaleTimeString();
 let invoiceID = Math.floor(Math.random()*100000);
 
 let caption =
-"⫶☰ ᯓ»NEW RANK ORDERᯓ»\n"+
-"════════════════════════\n"+
-"ᯓ» ɪɴᴠᴏɪᴄᴇ: #"+invoiceID+"\n"+
+"ᯓ»NEW RANK ORDERᯓ»\n"+
+"════════════════\n"+
 "ᯓ» ᴜѕᴇʀɴᴀᴍᴇ: "+username+"\n"+
+"ᯓ» ɪɴᴠᴏɪᴄᴇ: #"+invoiceID+"\n"+
 "ᯓ» ʀᴀɴᴋ: "+rank+"\n"+
 "ᯓ» ᴘʀɪᴄᴇ: "+price+"\n\n"+
 "ᯓ» ᴅᴀᴛᴇ: "+date+"\n"+
