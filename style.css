@@ -271,6 +271,7 @@ a {
   font-weight: normal;
   transition: all 0.2s ease;
   z-index: 9999;
+  user-select: none;
 }
 
 .sidebar {
@@ -746,15 +747,15 @@ span {
   .txt {
     position: relative;
     top: 0;
-    font-family: cursive;
+    font-family: sans sarif;
   }
   .link-txt, .adress {
-    font-family: cursive;
+    font-family: sans sarif;
     font-weight: bolder;
     color: #fff;
   }
   .moreWebsite {
-    font-family: cursive;
+    font-family: sans sarif;
     margin-block-start: -20px;
     font-weight: bolder;
   }
