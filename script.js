@@ -128,14 +128,20 @@ Menu Toggle
 
 function toggleMenu() {
 document.getElementById("sidebar").classList.toggle("active");
-document.querySelector(".menu-btn").classList.toggle("hide");
+document.querySelector(".menu-btn").classList.toggle("active");
 document.querySelector(".close").classList.toggle("show");
 }
 
 function closeMenu() {
-document.querySelector(".menu-btn").classList.remove("hide");
+document.querySelector(".menu-btn").classList.remove("active");
 document.querySelector(".close").classList.remove("show");
 document.getElementById("sidebar").classList.remove("active");
+}
+
+function toggleDropdown() {
+    document.querySelector(".link-dropdown").classList.toggle("showdropdown");   
+    document.querySelector(".bottom-link").classList.toggle("showdropdown");   
+    document.querySelector(".drop-down").classList.toggle("rotate");   
 }
 
 

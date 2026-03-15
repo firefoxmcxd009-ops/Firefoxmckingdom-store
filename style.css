@@ -22,11 +22,13 @@ body {
   background-size: 100%;
   background-attachment: fixed;
   user-select: none;
-  font-family: 'Esportiva';
+  font-family: 'brotesque' sans-serif;
   font-weight: normal;
-  animation: headBg 10s alternate-reverse infinite;
   background-size: 100%;
   justify-content: center;
+}
+.auto-type {
+  font-family: 'brotesque';
 }
 button {
   cursor: pointer;
@@ -264,16 +266,8 @@ a {
 
 /*========= Menu ==========*/
 .menu-btn {
-  opacity: 0;
-  top: 10px;
-  display: flex;
-  font-size: 25px;
-  font-weight: normal;
-  transition: all 0.2s ease;
-  z-index: 9999;
-  user-select: none;
+  display: none;
 }
-
 .sidebar {
   display: flex;
   position: fixed;
@@ -363,8 +357,8 @@ svg {
   transition: all .4s ease;
 }
 .link-dropdown.showdropdown {
-  opacity: 1;
   display: block;
+  opacity: 1;
   background: rgba(0, 0, 0, 0.525);
   backdrop-filter: blur(4px);
   border-radius: 10px 10px;
@@ -471,6 +465,7 @@ p {
 h3, span {
   color: #fff;
   font-weight: normal;
+  font-family: 'brotesque';
 }
 h4, h5, h6 {
   font-size: 20px;
@@ -720,7 +715,7 @@ span {
   .about-txt {
     color: #fff;
     font-weight: bolder;
-    font-family: cursive;
+    font-family: 'brotesque';
     font-size: 15px;
   }
   .gamemode {
@@ -747,15 +742,15 @@ span {
   .txt {
     position: relative;
     top: 0;
-    font-family: sans sarif;
+    font-family: 'brotesque';
   }
   .link-txt, .adress {
-    font-family: sans sarif;
+    font-family: 'brotesque';
     font-weight: bolder;
     color: #fff;
   }
   .moreWebsite {
-    font-family: sans sarif;
+    font-family: 'brotesque';
     margin-block-start: -20px;
     font-weight: bolder;
   }
@@ -785,11 +780,12 @@ body {
 }
 #icon {
   position: relative;
-  left: 40px;
+  margin: 0 auto;
 }
 #status {
-  justify-content: start;
-  left: auto;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
   position: relative;
   left: 0;
   top: 0;
@@ -799,12 +795,12 @@ body {
 }
 #progress-container {
   width: 100%;
-  margin-left: 10%;
+  margin: 0 auto;
 }
 #progress-text {
   font-weight: normal;
-  margin-left: 0%;
   text-align: center;
+  margin: 0 auto;
 }
   .firefoxmc-kingdom {
     font-size: 100%;
@@ -823,33 +819,23 @@ body {
     top: -10px;
   }
   /* ===== Menu =====*/
-  .menu-btn.hide {
-    rotate: -90deg;
-    opacity: 0;
-  }
-  .menu-btn.show {
-    display: flex;
-    rotate: -90deg;
+  .menu-btn {
     opacity: 1;
-  }
-  .menu-btn {
     display: flex;
-    font-size: 10px;
-  }
-  .menu-btn {
+    width: 25px;
     position: absolute;
     right: 15px;
-    top: 6px;
-    font-size: 30px;
-    background: none;
+    top: 15px;
     color: white;
     border: none;
     cursor: pointer;
     transition: rotate 0.3s ease;
+    z-index: 9999;
   }
 
   .menu-btn.active {
     rotate: 90deg;
+    opacity: 0;
   }
   .sidebar {
     display: block;
@@ -951,16 +937,7 @@ body {
       background: none;
       scale: 1;
     }
-
-  .menu-btn {
-    opacity: 1;
-    top: 10px;
-    display: flex;
-    font-size: 25px;
-    font-weight: normal;
-  }
-
-  .close {
+.close {
   width: 25px;
   transition: all 0.2s ease;
   display: flex;
@@ -1076,6 +1053,7 @@ body {
     text-align: start;
   }
   .about-txt {
+    font-family: sans-serif;
     font-size: 13px;
     align-items: center;
     text-align: center;
