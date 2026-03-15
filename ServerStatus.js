@@ -1,4 +1,4 @@
-let server = "dinomc.org";
+let server = "mazerclub.net";
 
 function updateServer() {
     fetch("https://api.mcsrvstat.us/3/" + server)
