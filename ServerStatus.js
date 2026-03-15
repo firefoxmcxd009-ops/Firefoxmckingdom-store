@@ -1,4 +1,4 @@
-let server = "mazerclub.net";
+let server = "friendlymc.vip";
 
 function updateServer() {
     fetch("https://api.mcsrvstat.us/3/" + server)
