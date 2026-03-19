@@ -1,4 +1,4 @@
-let server = "friendlymc.vip";
+let server = "firefoxmckingdom.apsara.lol";
 
 function updateServer() {
     fetch("https://api.mcsrvstat.us/3/" + server)
@@ -38,7 +38,7 @@ function updateServer() {
             } else {
                 statusEl.innerHTML = "Server is Offline!";
                 progressBarEl.style.width = "0%";
-                playerTextEl.textContent = "0/0";
+                playerTextEl.textContent = "0/0 players";
             }
 
         })
