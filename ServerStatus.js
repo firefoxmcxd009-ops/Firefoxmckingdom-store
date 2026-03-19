@@ -1,4 +1,4 @@
-let server = "firefoxmckingdom.apsara.lol";
+let server = "dinomc.org";
 
 function updateServer() {
     fetch("https://api.mcsrvstat.us/3/" + server)
