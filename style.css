@@ -27,6 +27,27 @@ body {
   background-size: 100%;
   justify-content: center;
 }
+/* ===== FIX SCROLL BUG ===== */
+html, body {
+  overflow-x: hidden;
+}
+
+/* FIX IMAGE OVERFLOW */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FIX BLUR EFFECT OVERFLOW */
+#blur {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* PREVENT ELEMENT OVERFLOW */
+* {
+  max-width: 100%;
+}
 .auto-type {
   font-family: 'brotesque';
 }
