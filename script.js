@@ -253,3 +253,42 @@ function hideSkeleton(){
 //  document.getElementById("KitSkeleton").classList.add("hidden");
 //  document.getElementById("KitGUI").src = "/Icon.svg/Server-Logo.webp";
 //}
+
+let deferredPrompt;
+
+const banner = document.getElementById("pwa-banner");
+const installBtn = document.getElementById("pwa-install");
+const closeBtn = document.getElementById("pwa-close");
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+
+  // បង្ហាញ banner
+  setTimeout(() => {
+    banner.classList.add("show");
+  }, 2000);
+});
+
+// Click install
+installBtn.addEventListener("click", async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+
+    const choice = await deferredPrompt.userChoice;
+
+    if (choice.outcome === 'accepted') {
+      console.log("Installed ✅");
+    } else {
+      console.log("Cancelled ❌");
+    }
+
+    deferredPrompt = null;
+    banner.classList.remove("show");
+  }
+});
+
+// Close banner
+closeBtn.addEventListener("click", () => {
+  banner.classList.remove("show");
+});
