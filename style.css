@@ -48,6 +48,82 @@ img {
 * {
   max-width: 100%;
 }
+/* popup */
+/* ===== PWA INSTALL BANNER ===== */
+#pwa-banner {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 500px;
+  z-index: 9999;
+  transition: top 0.5s ease;
+}
+
+/* SHOW */
+#pwa-banner.show {
+  top: 10px;
+}
+
+/* CONTENT */
+.pwa-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 15px;
+
+  box-shadow: 0 0 15px #ff00ff33;
+}
+
+/* ICON */
+.pwa-icon {
+  width: 40px;
+  border-radius: 10px;
+}
+
+/* TEXT */
+.pwa-text h4 {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
+
+.pwa-text p {
+  font-size: 12px;
+  color: #aaa;
+  margin: 0;
+}
+
+/* INSTALL BUTTON */
+#pwa-install {
+  margin-left: auto;
+  padding: 5px 10px;
+  background: linear-gradient(45deg, #ff00aa, #00ccff);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#pwa-install:hover {
+  scale: 1.05;
+}
+
+/* CLOSE BUTTON */
+#pwa-close {
+  margin-left: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+/*---------*/
 .auto-type {
   font-family: 'brotesque';
 }
